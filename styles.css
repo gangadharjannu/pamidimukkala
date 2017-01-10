@@ -1,0 +1,108 @@
+html, body, .wrapper{
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+.wrapper{
+	box-sizing:border-box;
+	/*padding:0 10px;*/
+	min-width:300px;
+	max-width:1200px;
+	margin:auto;
+}
+header{
+	/*display:table;
+	vertical-align:bottom;*/
+	position: relative;
+	padding:0 10px;
+}
+.logo{
+	/*display:table-cell;*/
+	/*margin:auto;*/
+	height:100px;
+	vertical-align: bottom;
+}
+nav{
+	/*display: table-cell;
+    vertical-align: middle;
+    padding-top: 50px;*/
+   margin: 10px 0;
+   text-align: center;
+}
+nav div{
+	display:inline-block;
+	width:30%;
+}
+nav a{
+	padding:5px 5px 5px 0;
+}
+.social-links{
+	/*float: right;*/
+    text-align: right;
+    /*width:100%;*/
+    position: absolute;
+    top:10px;
+    right:2%;
+    white-space: nowrap;
+}
+/*.banner div{
+	float:right;
+}*/
+/*.banner-left{
+	width:70%;
+}
+.banner-right{
+	width:30%;
+}*/
+h1{
+	font-size:20px;
+	text-align:center;
+}
+.banner{
+	background: rgba(183,177,170,0.8);
+	padding:0 10px;
+}
+.banner-right{
+	text-align: center;
+	
+}
+.banner-left{
+	margin-top:-110px;
+}
+@media all and (min-width:768px){
+	.logo{
+		display:block;
+		margin:auto;
+		height:auto;
+	}
+	.social-links{
+		position:static;
+		float:right;
+	}
+	nav{
+		text-align: left;
+	}
+	nav div{
+		width:100px;
+	}
+	.banner div{
+		float: right;
+	}
+	.banner-right{
+		width:30%;
+	}
+	.banner-right img{
+		margin-top:20px;
+		width:80%;
+	}
+	.banner-left{
+		width:68%;
+		margin-top:80px;
+	}
+	h1{
+		text-align:left;
+		font-size:35px;
+		line-height:50px;
+	}
+}
