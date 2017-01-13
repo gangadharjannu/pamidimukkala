@@ -1,33 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="Pamidimukkala" ng-controller="AppController as AC">
 	<head>
-		<title>Pamidimukkala Society</title>
-		<link href="common.css" rel="stylesheet"/>
+		<meta charset="utf-8">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta name="format-detection" content="telephone=no"/>
+		<meta name="viewport" content="width=device-width, height=device-height, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="assets/css/common.css"/>
 	</head>
+
 	<body>
 		<div class="wrapper">
 			<header>
-				<img class="logo" src="imgs/logo.png"/>
+				<img class="logo" src="assets/img/logo.png"/>
 				<nav>
 					<div class="social-links">
-						<a><img src="imgs/fb.png"/></a>
-						<a><img src="imgs/twitter.png"/></a>
-						<a><img src="imgs/gplus.png"/></a>
+						<a><img src="assets/img/fb.png"/></a>
+						<a><img src="assets/img/twitter.png"/></a>
+						<a><img src="assets/img/gplus.png"/></a>
 					</div>
 					<div>
-						<a href="#">Home</a>
+						<a ui-sref="home">Home</a>
 					</div>
 					<div>
-						<a href="#">About</a>
+						<a ui-sref="about">About</a>
 					</div>
 					<div>
-						<a href="#">Contact</a>
+						<a ui-sref="contact">Contact</a>
 					</div>
 					
 				</nav>
 			</header>
 			
-			<div class="container">
+			<div class="container" ui-view>
 				<div class="banner">
 					
 					<div class="banner-left">
@@ -50,6 +54,33 @@
 			<footer>
 				
 			</footer>
+		</div>
+
+
+		<!-- libs -->
+		<script src="assets/js/lib/jquery-2.2.2.min.js"></script>
+		<script src="assets/js/lib/angular.min.js"></script>
+		<script src="assets/js/lib/angular-ui-router.js"></script>
+		
+		<script src="assets/js/lib/angular-route.min.js"></script>
+		<!-- ui-routing -->
+		<script src="app.config.js"></script>
+
+		<!-- controllers -->
+		<script src="app.controller.js"></script>
+
+
+		<div class="loader">
+			<div id="circularG">
+				<div id="circularG_1" class="circularG"></div>
+				<div id="circularG_2" class="circularG"></div>
+				<div id="circularG_3" class="circularG"></div>
+				<div id="circularG_4" class="circularG"></div>
+				<div id="circularG_5" class="circularG"></div>
+				<div id="circularG_6" class="circularG"></div>
+				<div id="circularG_7" class="circularG"></div>
+				<div id="circularG_8" class="circularG"></div>
+			</div>
 		</div>
 	</body>
 </html>
