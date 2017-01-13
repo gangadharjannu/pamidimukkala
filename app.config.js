@@ -7,12 +7,12 @@ function config($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise('/home');
 	$stateProvider.state('home', {
 		url : '/home',
-		templateUrl : 'app/views/home.html',
+		templateUrl : 'views/home.html',
 	}).state('about', {
 		url : '/about',
-		templateUrl : 'app/views/about.html',
+		templateUrl : 'views/about.html',
 	}).state('contact', {
 		url : '/contact',
-		templateUrl : 'app/views/contact.html',
+		templateUrl : 'views/contact.html',
 	});
 }
