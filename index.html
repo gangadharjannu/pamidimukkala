@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html ng-app="Pamidimukkala" ng-controller="AppController as AC">
 	<head>
+		<title>Pamidimukkala Society</title>
+		<link href="img/logo.png" rel="shortcut icon">
 		<meta charset="utf-8">
 		<meta content="IE=edge" http-equiv="X-UA-Compatible">
 		<meta name="format-detection" content="telephone=no"/>
@@ -14,9 +16,9 @@
 				<img class="logo" src="img/logo.png"/>
 				<nav>
 					<div class="social-links">
-						<a><img src="img/fb.png"/></a>
-						<a><img src="img/twitter.png"/></a>
-						<a><img src="img/gplus.png"/></a>
+						<a href="https://facebook.com" target="_blank"><img src="img/fb.png"/></a>
+						<a href="https://twitter.com" target="_blank"><img src="img/twitter.png"/></a>
+						<a href="https://plus.google.com" target="_blank"><img src="img/gplus.png"/></a>
 					</div>
 					<div>
 						<a ui-sref="home">Home</a>
@@ -30,57 +32,21 @@
 					
 				</nav>
 			</header>
-			
 			<div class="container" ui-view>
-				<div class="banner">
-					
-					<div class="banner-left">
-						<h1>
-							LATE SRI.SURYANARAYANA AND <br/> LATE.SMT PICHAMMA MEMORIAL SOCIETY
-						</h1>
-						<p>
-							should be helpful to the Pamidimukkala clan members who are in not very sound economic position by way of helping financially, subject to the limitations of the strength of the Society and also poor Brahmins and then others in the Society.
-						</p>
-					</div>
-					<div class="banner-right">
-						<img src="img/pichammagaru.png"/>
-						<p>Late Smt.Pichamma garu</p>
-					</div>
-					
-				</div>
-				
 				
 			</div>
-			<footer>
-				
-			</footer>
 		</div>
-
 
 		<!-- libs -->
 		<script src="js/jquery-2.2.2.min.js"></script>
 		<script src="js/angular.min.js"></script>
 		<script src="js/angular-ui-router.js"></script>
-		
 		<script src="js/angular-route.min.js"></script>
 		<!-- ui-routing -->
 		<script src="app.config.js"></script>
-
 		<!-- controllers -->
 		<script src="app.controller.js"></script>
+		<script src="js/contactUs.controller.js"></script>
 
-
-		<div class="loader">
-			<div id="circularG">
-				<div id="circularG_1" class="circularG"></div>
-				<div id="circularG_2" class="circularG"></div>
-				<div id="circularG_3" class="circularG"></div>
-				<div id="circularG_4" class="circularG"></div>
-				<div id="circularG_5" class="circularG"></div>
-				<div id="circularG_6" class="circularG"></div>
-				<div id="circularG_7" class="circularG"></div>
-				<div id="circularG_8" class="circularG"></div>
-			</div>
-		</div>
 	</body>
 </html>
