@@ -4,14 +4,6 @@ html, body, .wrapper{
 	padding:0;
 	min-height: 100%;
 }
-body{
-	background: rgb(238,255,19);
-	background: -moz-linear-gradient(top, rgba(238,255,19,1) 0%, rgba(2,248,253,1) 100%);
-	background: -webkit-linear-gradient(top, rgba(238,255,19,1) 0%,rgba(2,248,253,1) 100%);
-	background: linear-gradient(to bottom, rgba(238,255,19,1) 0%,rgba(2,248,253,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeff13', endColorstr='#02f8fd',GradientType=0 );
-	background-size:cover;
-}
 .wrapper{
 	box-sizing:border-box;
 	min-width:300px;
@@ -36,6 +28,7 @@ nav div{
 nav a{
 	padding:5px 5px 5px 0;
 	text-decoration:none;
+	color:white;
 }
 .social-links{
     text-align: right;
@@ -47,33 +40,16 @@ nav a{
 }
 h1{
 	font-size:24px;
-	/*text-align:center;*/
 	color:rgb(179,55,63);
 }
-h2{
-	color:#454545;
-}
-h3, h4{
-	color:#545454;
-	font-weight:normal;
-}
-h2{
-	border-bottom:1px solid #545454;
-}
 p, li{
-	color:#212F3D;
 	line-height:22px;
 }
 .banner-right{
 	text-align: center;
-	
-}
-.banner-left{
-	/*margin-top:-110px;*/
 }
 .about-section{
 	padding:10px 20px;
-	background:white;
 }
 ul li{
 	list-style: none;
@@ -83,6 +59,63 @@ ul{
 }
 ol{
 	padding-left:20px;
+}
+.banner-right p{
+	font-style: italic;
+    font-size: 18px;
+    margin-top: 5px;
+}
+.download-pdf {
+    margin: 15px 0 10px;
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(30,126,169);
+}
+.contact-container{
+	padding: 10px 20px;
+}
+.container{
+	overflow-x:hidden;
+}
+.contact-form{
+	position:relative;
+	max-width:640px;
+	margin:auto;
+}
+iframe{
+	width:120%;
+	margin-left:-10%;
+	height: 1140px;
+}
+.member-list{
+	margin-top: 40px;
+    background: rgba(0,0,0,0.4);
+    padding: 1px 10px 10px;
+}
+.member-list span {
+    font-size: 12px;
+}
+.member-list h4{
+	margin: 15px 0 0;
+}
+@media all and (max-width:767px){
+	nav{
+		margin: 10px 0 0;
+	    text-align: center;
+	    background: rgba(255,255,255,0.1);
+	    padding: 10px 0;
+	}
+	nav a{
+		font-size: 20px;
+	}
+	h1{
+		text-align: center;
+    	line-height: 32px;
+	}
+	.banner{
+		margin:10px;
+	}
 }
 @media all and (min-width:768px){
 	.logo{
@@ -102,6 +135,9 @@ ol{
 	nav a{
 		font-size:22px;
 	}
+	.banner{
+		margin: 0 10px;
+	}
 	.banner div{
 		float: left;
 	}
@@ -113,9 +149,14 @@ ol{
 		margin-top:40px;
 		width:70%;
 	}
+	.banner-right p{
+		width: 70%;
+	    text-align: center;
+	    float: right;
+	}
 	.banner-left{
 		width:70%;
-		margin-top:80px;
+		margin-top:60px;
 	}
 	h1{
 		text-align:left;
@@ -123,4 +164,61 @@ ol{
 		line-height:50px;
 		font-weight:normal;
 	}
+	.member-list li{
+		display: inline-block;
+	    width: 49%;
+	}
 }
+
+/** theming **/
+body{
+	background: rgb(27,17,8);
+	background: -moz-linear-gradient(left,  rgba(27,17,8,1) 0%, rgba(25,15,6,1) 1%, rgba(27,17,8,1) 2%, rgba(26,16,7,1) 4%, rgba(29,19,10,1) 4%, rgba(29,19,10,1) 5%, rgba(26,16,7,1) 5%, rgba(26,16,7,1) 6%, rgba(29,19,10,1) 6%, rgba(29,19,10,1) 7%, rgba(30,15,8,1) 8%, rgba(30,15,8,1) 8%, rgba(36,21,14,1) 9%, rgba(34,19,12,1) 9%, rgba(34,20,9,1) 13%, rgba(36,22,11,1) 13%, rgba(36,22,11,1) 14%, rgba(38,24,13,1) 14%, rgba(38,24,13,1) 15%, rgba(44,30,19,1) 15%, rgba(35,21,10,1) 16%, rgba(37,23,12,1) 16%, rgba(44,30,19,1) 16%, rgba(39,25,14,1) 16%, rgba(33,19,8,1) 17%, rgba(38,24,13,1) 17%, rgba(38,24,13,1) 17%, rgba(40,26,15,1) 18%, rgba(38,24,13,1) 18%, rgba(41,27,16,1) 18%, rgba(40,26,15,1) 18%, rgba(32,18,7,1) 18%, rgba(39,25,14,1) 18%, rgba(40,26,15,1) 20%, rgba(45,27,17,1) 20%, rgba(45,27,17,1) 21%, rgba(41,23,13,1) 21%, rgba(45,27,17,1) 21%, rgba(40,22,12,1) 21%, rgba(40,22,12,1) 22%, rgba(45,27,17,1) 22%, rgba(44,26,16,1) 23%, rgba(48,30,20,1) 24%, rgba(44,26,16,1) 24%, rgba(46,28,18,1) 26%, rgba(44,26,16,1) 26%, rgba(43,25,15,1) 30%, rgba(45,27,17,1) 30%, rgba(45,27,13,1) 31%, rgba(47,29,15,1) 31%, rgba(42,24,10,1) 32%, rgba(43,25,11,1) 33%, rgba(45,27,13,1) 33%, rgba(45,27,13,1) 34%, rgba(42,24,10,1) 34%, rgba(48,30,16,1) 35%, rgba(48,30,16,1) 36%, rgba(46,28,14,1) 36%, rgba(45,27,13,1) 41%, rgba(45,27,13,1) 44%, rgba(45,27,17,1) 44%, rgba(45,27,17,1) 45%, rgba(41,23,13,1) 45%, rgba(44,26,16,1) 47%, rgba(44,26,16,1) 47%, rgba(39,25,14,1) 47%, rgba(43,26,16,1) 49%, rgba(44,26,16,1) 55%, rgba(41,27,16,1) 55%, rgba(40,26,15,1) 56%, rgba(41,23,13,1) 56%, rgba(41,23,13,1) 57%, rgba(43,25,15,1) 57%, rgba(40,26,15,1) 60%, rgba(38,24,13,1) 60%, rgba(35,21,10,1) 62%, rgba(35,21,10,1) 63%, rgba(40,26,15,1) 64%, rgba(36,22,11,1) 64%, rgba(36,22,11,1) 65%, rgba(33,19,8,1) 66%, rgba(34,20,9,1) 68%, rgba(35,20,13,1) 69%, rgba(34,19,12,1) 71%, rgba(32,17,10,1) 71%, rgba(32,17,10,1) 72%, rgba(34,19,12,1) 72%, rgba(30,15,8,1) 72%, rgba(32,17,10,1) 72%, rgba(32,17,10,1) 73%, rgba(27,17,8,1) 73%, rgba(29,19,10,1) 75%, rgba(26,16,7,1) 76%, rgba(25,15,6,1) 77%, rgba(27,17,8,1) 77%, rgba(27,17,8,1) 78%, rgba(24,14,5,1) 78%, rgba(25,15,6,1) 79%, rgba(28,18,9,1) 79%, rgba(23,13,4,1) 80%, rgba(24,14,5,1) 80%, rgba(28,18,9,1) 80%, rgba(27,17,8,1) 81%, rgba(25,15,6,1) 81%, rgba(25,15,6,1) 82%, rgba(25,14,10,1) 82%, rgba(25,14,10,1) 83%, rgba(22,15,9,1) 87%, rgba(20,13,7,1) 87%, rgba(20,13,7,1) 88%, rgba(22,15,9,1) 88%, rgba(22,15,9,1) 88%, rgba(20,13,7,1) 88%, rgba(20,13,7,1) 100%);
+	background: -webkit-linear-gradient(left,  rgba(27,17,8,1) 0%,rgba(25,15,6,1) 1%,rgba(27,17,8,1) 2%,rgba(26,16,7,1) 4%,rgba(29,19,10,1) 4%,rgba(29,19,10,1) 5%,rgba(26,16,7,1) 5%,rgba(26,16,7,1) 6%,rgba(29,19,10,1) 6%,rgba(29,19,10,1) 7%,rgba(30,15,8,1) 8%,rgba(30,15,8,1) 8%,rgba(36,21,14,1) 9%,rgba(34,19,12,1) 9%,rgba(34,20,9,1) 13%,rgba(36,22,11,1) 13%,rgba(36,22,11,1) 14%,rgba(38,24,13,1) 14%,rgba(38,24,13,1) 15%,rgba(44,30,19,1) 15%,rgba(35,21,10,1) 16%,rgba(37,23,12,1) 16%,rgba(44,30,19,1) 16%,rgba(39,25,14,1) 16%,rgba(33,19,8,1) 17%,rgba(38,24,13,1) 17%,rgba(38,24,13,1) 17%,rgba(40,26,15,1) 18%,rgba(38,24,13,1) 18%,rgba(41,27,16,1) 18%,rgba(40,26,15,1) 18%,rgba(32,18,7,1) 18%,rgba(39,25,14,1) 18%,rgba(40,26,15,1) 20%,rgba(45,27,17,1) 20%,rgba(45,27,17,1) 21%,rgba(41,23,13,1) 21%,rgba(45,27,17,1) 21%,rgba(40,22,12,1) 21%,rgba(40,22,12,1) 22%,rgba(45,27,17,1) 22%,rgba(44,26,16,1) 23%,rgba(48,30,20,1) 24%,rgba(44,26,16,1) 24%,rgba(46,28,18,1) 26%,rgba(44,26,16,1) 26%,rgba(43,25,15,1) 30%,rgba(45,27,17,1) 30%,rgba(45,27,13,1) 31%,rgba(47,29,15,1) 31%,rgba(42,24,10,1) 32%,rgba(43,25,11,1) 33%,rgba(45,27,13,1) 33%,rgba(45,27,13,1) 34%,rgba(42,24,10,1) 34%,rgba(48,30,16,1) 35%,rgba(48,30,16,1) 36%,rgba(46,28,14,1) 36%,rgba(45,27,13,1) 41%,rgba(45,27,13,1) 44%,rgba(45,27,17,1) 44%,rgba(45,27,17,1) 45%,rgba(41,23,13,1) 45%,rgba(44,26,16,1) 47%,rgba(44,26,16,1) 47%,rgba(39,25,14,1) 47%,rgba(43,26,16,1) 49%,rgba(44,26,16,1) 55%,rgba(41,27,16,1) 55%,rgba(40,26,15,1) 56%,rgba(41,23,13,1) 56%,rgba(41,23,13,1) 57%,rgba(43,25,15,1) 57%,rgba(40,26,15,1) 60%,rgba(38,24,13,1) 60%,rgba(35,21,10,1) 62%,rgba(35,21,10,1) 63%,rgba(40,26,15,1) 64%,rgba(36,22,11,1) 64%,rgba(36,22,11,1) 65%,rgba(33,19,8,1) 66%,rgba(34,20,9,1) 68%,rgba(35,20,13,1) 69%,rgba(34,19,12,1) 71%,rgba(32,17,10,1) 71%,rgba(32,17,10,1) 72%,rgba(34,19,12,1) 72%,rgba(30,15,8,1) 72%,rgba(32,17,10,1) 72%,rgba(32,17,10,1) 73%,rgba(27,17,8,1) 73%,rgba(29,19,10,1) 75%,rgba(26,16,7,1) 76%,rgba(25,15,6,1) 77%,rgba(27,17,8,1) 77%,rgba(27,17,8,1) 78%,rgba(24,14,5,1) 78%,rgba(25,15,6,1) 79%,rgba(28,18,9,1) 79%,rgba(23,13,4,1) 80%,rgba(24,14,5,1) 80%,rgba(28,18,9,1) 80%,rgba(27,17,8,1) 81%,rgba(25,15,6,1) 81%,rgba(25,15,6,1) 82%,rgba(25,14,10,1) 82%,rgba(25,14,10,1) 83%,rgba(22,15,9,1) 87%,rgba(20,13,7,1) 87%,rgba(20,13,7,1) 88%,rgba(22,15,9,1) 88%,rgba(22,15,9,1) 88%,rgba(20,13,7,1) 88%,rgba(20,13,7,1) 100%);
+	background: linear-gradient(to right,  rgba(27,17,8,1) 0%,rgba(25,15,6,1) 1%,rgba(27,17,8,1) 2%,rgba(26,16,7,1) 4%,rgba(29,19,10,1) 4%,rgba(29,19,10,1) 5%,rgba(26,16,7,1) 5%,rgba(26,16,7,1) 6%,rgba(29,19,10,1) 6%,rgba(29,19,10,1) 7%,rgba(30,15,8,1) 8%,rgba(30,15,8,1) 8%,rgba(36,21,14,1) 9%,rgba(34,19,12,1) 9%,rgba(34,20,9,1) 13%,rgba(36,22,11,1) 13%,rgba(36,22,11,1) 14%,rgba(38,24,13,1) 14%,rgba(38,24,13,1) 15%,rgba(44,30,19,1) 15%,rgba(35,21,10,1) 16%,rgba(37,23,12,1) 16%,rgba(44,30,19,1) 16%,rgba(39,25,14,1) 16%,rgba(33,19,8,1) 17%,rgba(38,24,13,1) 17%,rgba(38,24,13,1) 17%,rgba(40,26,15,1) 18%,rgba(38,24,13,1) 18%,rgba(41,27,16,1) 18%,rgba(40,26,15,1) 18%,rgba(32,18,7,1) 18%,rgba(39,25,14,1) 18%,rgba(40,26,15,1) 20%,rgba(45,27,17,1) 20%,rgba(45,27,17,1) 21%,rgba(41,23,13,1) 21%,rgba(45,27,17,1) 21%,rgba(40,22,12,1) 21%,rgba(40,22,12,1) 22%,rgba(45,27,17,1) 22%,rgba(44,26,16,1) 23%,rgba(48,30,20,1) 24%,rgba(44,26,16,1) 24%,rgba(46,28,18,1) 26%,rgba(44,26,16,1) 26%,rgba(43,25,15,1) 30%,rgba(45,27,17,1) 30%,rgba(45,27,13,1) 31%,rgba(47,29,15,1) 31%,rgba(42,24,10,1) 32%,rgba(43,25,11,1) 33%,rgba(45,27,13,1) 33%,rgba(45,27,13,1) 34%,rgba(42,24,10,1) 34%,rgba(48,30,16,1) 35%,rgba(48,30,16,1) 36%,rgba(46,28,14,1) 36%,rgba(45,27,13,1) 41%,rgba(45,27,13,1) 44%,rgba(45,27,17,1) 44%,rgba(45,27,17,1) 45%,rgba(41,23,13,1) 45%,rgba(44,26,16,1) 47%,rgba(44,26,16,1) 47%,rgba(39,25,14,1) 47%,rgba(43,26,16,1) 49%,rgba(44,26,16,1) 55%,rgba(41,27,16,1) 55%,rgba(40,26,15,1) 56%,rgba(41,23,13,1) 56%,rgba(41,23,13,1) 57%,rgba(43,25,15,1) 57%,rgba(40,26,15,1) 60%,rgba(38,24,13,1) 60%,rgba(35,21,10,1) 62%,rgba(35,21,10,1) 63%,rgba(40,26,15,1) 64%,rgba(36,22,11,1) 64%,rgba(36,22,11,1) 65%,rgba(33,19,8,1) 66%,rgba(34,20,9,1) 68%,rgba(35,20,13,1) 69%,rgba(34,19,12,1) 71%,rgba(32,17,10,1) 71%,rgba(32,17,10,1) 72%,rgba(34,19,12,1) 72%,rgba(30,15,8,1) 72%,rgba(32,17,10,1) 72%,rgba(32,17,10,1) 73%,rgba(27,17,8,1) 73%,rgba(29,19,10,1) 75%,rgba(26,16,7,1) 76%,rgba(25,15,6,1) 77%,rgba(27,17,8,1) 77%,rgba(27,17,8,1) 78%,rgba(24,14,5,1) 78%,rgba(25,15,6,1) 79%,rgba(28,18,9,1) 79%,rgba(23,13,4,1) 80%,rgba(24,14,5,1) 80%,rgba(28,18,9,1) 80%,rgba(27,17,8,1) 81%,rgba(25,15,6,1) 81%,rgba(25,15,6,1) 82%,rgba(25,14,10,1) 82%,rgba(25,14,10,1) 83%,rgba(22,15,9,1) 87%,rgba(20,13,7,1) 87%,rgba(20,13,7,1) 88%,rgba(22,15,9,1) 88%,rgba(22,15,9,1) 88%,rgba(20,13,7,1) 88%,rgba(20,13,7,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1108', endColorstr='#140d07',GradientType=1 );
+	color:white;
+}
+.container{
+	background: rgba(0,0,0,0.1);
+	box-shadow: 0 2px 3px rgba(255,255,255,0.5);
+}
+h1{
+	color:yellow;
+}
+h2{
+	color:rgb(212,244,76);
+	border-bottom:1px solid rgb(212,244,76);
+	padding-bottom:5px;
+}
+h3, h4{
+	color:rgb(212,244,76);
+	font-weight:normal;
+	margin-bottom: 0;
+}
+.banner-left p{
+	background: rgba(0,0,0,0.1);
+	padding:5px;
+}
+
+/* contact us */
+/*iframe{
+	height:500px;
+}
+.freebirdHeaderMast, .freebirdFormviewerViewNavigationPasswordWarning, form + div{
+	display:none;
+}
+.freebirdHeaderMast{
+	width:100%;
+}
+.freebirdFormviewerViewFormContent{
+	padding: 10px 0;
+}
+.freebirdFormviewerViewItemsItemItem{
+	padding: 0 15px;
+}
+.freebirdFormviewerViewItemsItemItemTitle{
+	font-size: 16px;
+	color:white;
+}*/
+
